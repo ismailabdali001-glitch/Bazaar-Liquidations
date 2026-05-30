@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Bazaar Liquidations — Up to 80% off retail. Brand-name liquidation, overstock, and customer returns. New deals every day. Treasure hunt savings." />
+  <title>Bazaar Liquidations | Up to 80% Off Retail. Every Day.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">🛒</span>
+        <span class="logo-text">Bazaar <span class="logo-accent">Liquidations</span></span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#deals">Deals</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#store">Store</a></li>
+          <li><a href="#newsletter" class="nav-cta">Get Alerts</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="container hero-content">
+      <div class="hero-badge">🔥 New Stock Just Arrived</div>
+      <h1>Up to <span class="hero-highlight">80% Off</span> Retail.<br />Every. Single. Day.</h1>
+      <p class="hero-sub">Brand-name liquidation, overstock &amp; customer returns — at prices you won't believe. Every visit is a new treasure hunt.</p>
+      <div class="hero-actions">
+        <a href="#deals" class="btn btn-primary">Shop Today's Deals</a>
+        <a href="#store" class="btn btn-outline">Visit Our Store</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value" data-count="85">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">Avg. Savings</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" data-count="15">0</span><span class="stat-suffix">K+</span>
+          <span class="stat-label">Happy Shoppers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" data-count="50">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Brands Available</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-particles" id="heroParticles"></div>
+  </section>
+
+  <!-- ===== FEATURED DEALS SECTION ===== -->
+  <section class="section deals" id="deals">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Hot Deals</span>
+        <h2>Today's <span class="text-accent">Featured Finds</span></h2>
+        <p>Grab 'em while they last — inventory turns over fast!</p>
+      </div>
+      <div class="deals-grid" id="dealsGrid">
+        <!-- Deals injected by JS -->
+      </div>
+      <div class="deals-footnote">
+        <span class="pulse-dot"></span> Prices update daily — check back every morning for fresh arrivals!
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT / VALUE PROP ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <span class="section-tag">How It Works</span>
+          <h2>Why Is It So <span class="text-accent">Cheap</span>?</h2>
+          <p class="about-lead">We buy what the big retailers don't want — and pass the savings straight to you.</p>
+          <div class="about-steps">
+            <div class="step">
+              <div class="step-icon">📦</div>
+              <div class="step-text">
+                <h4>Retail Overstock</h4>
+                <p>Major retailers over-order inventory. We buy their surplus pennies on the dollar.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-icon">🔄</div>
+              <div class="step-text">
+                <h4>Customer Returns</h4>
+                <p>Gently used or open-box items inspected and priced to move fast.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-icon">🏷️</div>
+              <div class="step-text">
+                <h4>Shelf Pulls</h4>
+                <p>End-of-season, packaging changes, and shelf-pull items at clearance prices.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-icon">🎯</div>
+              <div class="step-text">
+                <h4>You Save Big</h4>
+                <p>40–80% off retail — every item, every day. That's the Bazaar promise.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="price-compare">
+            <div class="price-card retail">
+              <span class="price-label">Retail Price</span>
+              <span class="price-value">$100</span>
+            </div>
+            <div class="price-arrow">→</div>
+            <div class="price-card bazaar">
+              <span class="price-label">Bazaar Price</span>
+              <span class="price-value">$19</span>
+              <span class="price-savings">You save $81!</span>
+            </div>
+          </div>
+          <p class="about-quote">"The treasure hunt is real. I walk in for one thing and leave with a cart full of deals I couldn't pass up."</p>
+          <p class="about-attribution">— Maria R., loyal customer since 2022</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORIES SECTION ===== -->
+  <section class="section categories" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Shop By Category</span>
+        <h2>Something for <span class="text-accent">Everyone</span></h2>
+        <p>Nine categories, endless deals. New stock hits the floor weekly.</p>
+      </div>
+      <div class="categories-grid">
+        <div class="cat-card" data-category="electronics">
+          <div class="cat-icon">📱</div>
+          <h4>Electronics</h4>
+          <span class="cat-count">120+ items</span>
+        </div>
+        <div class="cat-card" data-category="home">
+          <div class="cat-icon">🏠</div>
+          <h4>Home Goods</h4>
+          <span class="cat-count">85+ items</span>
+        </div>
+        <div class="cat-card" data-category="kitchen">
+          <div class="cat-icon">🍳</div>
+          <h4>Kitchen</h4>
+          <span class="cat-count">60+ items</span>
+        </div>
+        <div class="cat-card" data-category="toys">
+          <div class="cat-icon">🧸</div>
+          <h4>Toys &amp; Games</h4>
+          <span class="cat-count">45+ items</span>
+        </div>
+        <div class="cat-card" data-category="tools">
+          <div class="cat-icon">🔧</div>
+          <h4>Tools</h4>
+          <span class="cat-count">50+ items</span>
+        </div>
+        <div class="cat-card" data-category="beauty">
+          <div class="cat-icon">💄</div>
+          <h4>Health &amp; Beauty</h4>
+          <span class="cat-count">70+ items</span>
+        </div>
+        <div class="cat-card" data-category="seasonal">
+          <div class="cat-icon">🎄</div>
+          <h4>Seasonal</h4>
+          <span class="cat-count">30+ items</span>
+        </div>
+        <div class="cat-card" data-category="pets">
+          <div class="cat-icon">🐾</div>
+          <h4>Pet Supplies</h4>
+          <span class="cat-count">40+ items</span>
+        </div>
+        <div class="cat-card" data-category="essentials">
+          <div class="cat-icon">🧹</div>
+          <h4>Household Essentials</h4>
+          <span class="cat-count">100+ items</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CUSTOMER REVIEWS ===== -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2>What Our <span class="text-accent">Treasure Hunters</span> Say</h2>
+      </div>
+      <div class="reviews-carousel" id="reviewsCarousel">
+        <div class="reviews-track" id="reviewsTrack">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+      <div class="reviews-controls">
+        <button class="review-btn prev" id="reviewPrev" aria-label="Previous review">←</button>
+        <div class="review-dots" id="reviewDots"></div>
+        <button class="review-btn next" id="reviewNext" aria-label="Next review">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STORE INFO ===== -->
+  <section class="section store" id="store">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Visit Us</span>
+        <h2>Find Your <span class="text-accent">Next Deal</span></h2>
+      </div>
+      <div class="store-grid">
+        <div class="store-card">
+          <div class="store-icon">📍</div>
+          <h4>Location</h4>
+          <p>123 Market Street, Suite 101<br />Denver, CO 80202</p>
+          <a href="https://maps.google.com/?q=123+Market+Street+Denver+CO+80202" target="_blank" class="store-link">Get Directions →</a>
+        </div>
+        <div class="store-card">
+          <div class="store-icon">🕐</div>
+          <h4>Hours</h4>
+          <ul class="hours-list">
+            <li><span>Mon – Fri</span><span>9 AM – 8 PM</span></li>
+            <li><span>Saturday</span><span>9 AM – 9 PM</span></li>
+            <li><span>Sunday</span><span>10 AM – 6 PM</span></li>
+          </ul>
+        </div>
+        <div class="store-card">
+          <div class="store-icon">📞</div>
+          <h4>Contact</h4>
+          <p>
+            <a href="tel:+13035551234">(303) 555-1234</a><br />
+            <a href="mailto:hello@bazaarliquidations.com">hello@bazaarliquidations.com</a>
+          </p>
+          <p class="store-social">
+            <a href="#" aria-label="Facebook">FB</a>
+            <a href="#" aria-label="Instagram">IG</a>
+            <a href="#" aria-label="TikTok">TT</a>
+          </p>
+        </div>
+        <div class="store-card store-card-cta">
+          <div class="store-icon">💡</div>
+          <h4>Pro Tip</h4>
+          <p>New inventory drops every <strong>Tuesday &amp; Friday morning</strong>. Early birds get the best finds!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="section newsletter" id="newsletter">
+    <div class="container">
+      <div class="newsletter-inner">
+        <div class="newsletter-content">
+          <span class="section-tag section-tag-light">Stay in the Know</span>
+          <h2>Never Miss a <span class="text-accent">Drop</span></h2>
+          <p>Get notified when fresh liquidation stock hits the floor. No spam — just deal alerts.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <div class="form-row">
+            <input type="email" id="emailInput" placeholder="Enter your email" required aria-label="Email address" />
+            <button type="submit" class="btn btn-primary">Get Alerts</button>
+          </div>
+          <p class="form-disclaimer">🔥 Join 5,000+ Denver treasure hunters already in the loop.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-icon">🛒</span>
+          <span class="logo-text">Bazaar <span class="logo-accent">Liquidations</span></span>
+        </div>
+        <p>Denver's favorite liquidation store. Brand-name deals at up to 80% off. Every visit is a new treasure hunt.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="TikTok">🎵</a>
+          <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#deals">Today's Deals</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#about">How It Works</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#store">Store Info</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h5>Categories</h5>
+        <ul>
+          <li><a href="#">Electronics</a></li>
+          <li><a href="#">Home &amp; Kitchen</a></li>
+          <li><a href="#">Toys &amp; Games</a></li>
+          <li><a href="#">Tools</a></li>
+          <li><a href="#">Seasonal</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h5>Visit Us</h5>
+        <p>123 Market Street, Denver, CO</p>
+        <p><a href="tel:+13035551234">(303) 555-1234</a></p>
+        <p><a href="mailto:hello@bazaarliquidations.com">hello@bazaarliquidations.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Bazaar Liquidations. All rights reserved. Prices subject to change. No two visits are ever the same.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile CTA Bar -->
+  <div class="mobile-cta" id="mobileCta">
+    <a href="#deals" class="btn btn-primary">🔥 Shop Today's Deals</a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
